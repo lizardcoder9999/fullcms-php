@@ -122,6 +122,7 @@ routeProtection();
                         <th></th>
                       </tr>
                       <?php include_once("./includes/view_admins.php");?>
+                      <?php include_once("./includes/delete_admin.php");?>
                     </table>
               </div>
               </div>
