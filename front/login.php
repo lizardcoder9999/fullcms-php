@@ -119,6 +119,7 @@ body {
 		<input type="password" placeholder="password" required name="password">
 		<a href="" class="forgot_link">forgot ?</a>
 		<input name="login" value="Log In" type="submit">
+		</form>
 	</div>
 
   <script src="js/index.js"></script>

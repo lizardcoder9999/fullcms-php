@@ -82,11 +82,13 @@
                 <div class="well">
                     <h4>Blog Search</h4>
                     <div class="input-group">
-                        <input type="text" class="form-control">
+                    <form action="" method="POST">
+                        <input type="text" class="form-control" name="search_bar">
                         <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">
+                            <input class="form-control" type="submit" value="search" name="search">
                                 <span class="glyphicon glyphicon-search"></span>
-                        </button>
+                        </form>
+                        <?php include_once("./includes/search.php"); ?>
                         </span>
                     </div>
                     <!-- /.input-group -->
