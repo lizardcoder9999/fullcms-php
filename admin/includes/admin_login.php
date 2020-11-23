@@ -14,7 +14,7 @@ if(empty($_POST['email']) || empty($_POST['password'])){
 
 }else{
 
-$query = "SELECT * FROM admin WHERE admin_email = ? AND admin_password = ?";
+$query = "SELECT * FROM admins WHERE admin_email = ? AND admin_password = ?";
 $stmt = mysqli_stmt_init($connection);
 if(!mysqli_stmt_prepare($stmt,$query)){
 
