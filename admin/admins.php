@@ -140,7 +140,7 @@ routeProtection();
     <div class="modal fade" id="addAdmin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <form action="" method="post">
+      <form action="./includes/add_admin.php" method="post">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">Add Admin</h4>
@@ -161,12 +161,12 @@ routeProtection();
 
         <div class="form-group">
           <label>Admin Password</label>
-          <input type="password" class="form-control"  name="admin_email" placeholder="Admin password">
+          <input type="password" class="form-control"  name="admin_password" placeholder="Admin password">
         </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <input type="submit" id="submit"class="form-control" name ="submit" value="Add Admin">
+        <input type="submit" class="form-control" name ="submit" value="Add Admin">
       </div>
      
     </form>
