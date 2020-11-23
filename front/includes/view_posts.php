@@ -25,7 +25,7 @@ while($row = mysqli_fetch_assoc($view_posts_query)){
      echo "</p>";
      echo "<p><span class='glyphicon glyphicon-time'></span> Posted on $posted_on</p>";
      echo "<hr>";
-     echo "<img class='img-responsive' src='$post_image_link' alt=''>";
+     echo "<img class='img-responsive' src='$post_image_link' alt='' width = '500px'>";
      echo "<hr>";
      echo "$post_content";
      echo "<a class='btn btn-primary' href='#'>Read More <span class='glyphicon glyphicon-chevron-right'></span></a>";
