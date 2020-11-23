@@ -121,6 +121,7 @@ routeProtection();
                         <th>Admin Email</th>
                         <th></th>
                       </tr>
+                      <?php include_once("./includes/view_admins.php");?>
                     </table>
               </div>
               </div>
