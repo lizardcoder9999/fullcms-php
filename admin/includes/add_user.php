@@ -7,6 +7,7 @@ $fullname = $_POST['fullname'];
 $username = $_POST['username'];
 $password = $_POST['password'];
 $email = $_POST['email'];
+$password = password_hash($password,PASSWORD_BCRYPT, ["cost" => 12]);
 
 $query = "INSERT INTO users(user_name,username,user_password,user_email)";
 $query .= "VALUES(?,?,?,?)";
