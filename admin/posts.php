@@ -120,7 +120,9 @@ routeProtection();
                         <th>Tags</th>
                         <th></th>
                       </tr>
-                    <?php include_once "./includes/view_posts.php";?>
+                      
+                    <?php include_once("./includes/view_posts.php");?>
+                    <?php include_once("./includes/delete_posts.php");?>
                     </table>
 
               </div>

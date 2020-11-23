@@ -4,7 +4,7 @@ if(isset($_POST['submit'])){
 $post_title = $_POST['post_title'];
 $post_author = $_POST['post_author'];
 $post_content = $_POST['editor1'];
-$post_tags = =$_POST['post_tags'];
+$post_tags = $_POST['post_tags'];
 
 $query = "INSERT INTO posts(post_name,post_content,post_author,post_tags) ";
 $query .= "VALUES(?,?,?,?)";
