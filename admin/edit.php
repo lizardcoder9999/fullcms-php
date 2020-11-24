@@ -1,7 +1,7 @@
 <?php  session_start();  ?>
 <?php
-// include "./includes/functions.php";
-// routeProtection();
+include "./includes/functions.php";
+routeProtection();
 ?>
 <!DOCTYPE html>
 <html lang="en">
