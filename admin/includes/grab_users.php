@@ -21,7 +21,7 @@ echo "<td>$user_id</td>";
 echo  "<td>$user_name</td>";
 echo  "<td>$user_email</td>";
 echo  "<td>$username</td>";
-echo  "<td><a class='btn btn-danger' href='users.php?delete=$user_id'>Delete</a></td>";
+echo  "<td><a class='btn btn-normal' href='user_edit.php?edit_user=$user_id'>Delete</a><a class='btn btn-danger' href='users.php?delete=$user_id'>Delete</a></td>";
 echo "</tr>";
 
 }

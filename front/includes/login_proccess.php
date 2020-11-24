@@ -7,7 +7,7 @@ if(isset($_POST['login'])){
     $email = mysqli_real_escape_string($connection,$email);
     $password = mysqli_real_escape_string($connection,$password);
 
-$query = "SELECT FROM users where user_email = $email";
+$query = "SELECT user_id FROM users where user_email = $email";
     $find_user_query = mysqli_query($connection,$query);
     
     while($row = mysqli_fetch_array($find_user_query)){
@@ -39,25 +39,6 @@ $query = "SELECT FROM users where user_email = $email";
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

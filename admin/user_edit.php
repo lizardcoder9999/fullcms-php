@@ -108,34 +108,28 @@
             <!-- Website Overview -->
             <div class="panel panel-default">
               <div class="panel-heading main-color-bg">
-                <h3 class="panel-title">Edit Page</h3>
+                <h3 class="panel-title">Edit User</h3>
               </div>
               <div class="panel-body">
-                <form>
+                <form action="" method="POST">
+                    <?php include("./includes/edit_user.php");?>
                   <div class="form-group">
-                    <label>Page Title</label>
-                    <input type="text" class="form-control" placeholder="Page Title" value="About">
-                  </div>
-                  <div class="form-group">
-                    <label>Page Body</label>
-                    <textarea name="editor1" class="form-control" placeholder="Page Body">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </textarea>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" checked> Published
-                    </label>
+                    <label>User Full Name</label>
+                    <input type="text" class="form-control" placeholder="Enter User Full Name" value=<?php   echo $db_user_fullname;?> name="user_fullname">
                   </div>
                   <div class="form-group">
-                    <label>Meta Tags</label>
-                    <input type="text" class="form-control" placeholder="Add Some Tags..." value="tag1, tag2">
+                    <label>User Email</label>
+                    <input type="email" class="form-control" placeholder="Enter User Email" value=<?php echo $db_user_email;?> name="user_email">
                   </div>
                   <div class="form-group">
-                    <label>Meta Description</label>
-                    <input type="text" class="form-control" placeholder="Add Meta Description..." value="  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ">
+                    <label>Username</label>
+                    <input type="text" class="form-control" placeholder="Enter Username" value=<?php echo $db_username;?> name="username">
                   </div>
-                  <input type="submit" class="btn btn-default" value="Submit">
+                  <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" placeholder="Enter password" value=<?php echo $db_user_password;?> name="user_password">
+                  </div>
+                  <input type="submit" class="btn btn-default" value="Submit" name="edit_user">
                 </form>
               </div>
               </div>

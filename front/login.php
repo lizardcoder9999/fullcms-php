@@ -112,15 +112,15 @@ body {
 		<div class="avatar">
       <img src="https://usersinsights.com/wp/wp-content/uploads/2018/03/image6.png">
 		</div>
-		<input type="email" placeholder="email" required name="email">
+		<input type="email" placeholder="email"  name="email">
 		<div class="bar">
 			<i></i>
 		</div>
-		<input type="password" placeholder="password" required name="password">
+		<input type="password" placeholder="password"  name="password">
 		<a href="" class="forgot_link">forgot ?</a>
 		<input name="login" value="Log In" type="submit">
-		</form>
 	</div>
+	</form>
 
   <script src="js/index.js"></script>
 
