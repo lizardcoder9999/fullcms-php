@@ -56,9 +56,19 @@
                     echo "</li>";
 
                     echo  "<li>";
-                    echo  "<a href='#'>Logout</a>";
+                    echo  "<a href='logout.php'>Logout</a>";
                     echo "</li>";
 
+                  }else{
+
+
+                    echo  "<li>";
+                    echo  "<a href='login.php'>Login</a>";
+                    echo "</li>";
+
+                    echo  "<li>";
+                    echo  "<a href='registration.php'>Register</a>";
+                    echo "</li>";
 
 
 
