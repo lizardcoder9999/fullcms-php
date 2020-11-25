@@ -117,7 +117,20 @@ body {
 			<i></i>
 		</div>
 		<input type="password" placeholder="password"  name="password">
-		<a href="" class="forgot_link">forgot ?</a>
+
+		<?php 
+		
+		if(isset($_GET['success'])){
+            if ($_GET['success']=="passwordupdated") {
+				echo "<p class = '.bg-gradient-success'>Your Password has now been updated. You can now login</p>";
+            }
+		}
+		
+		?>
+
+
+
+		<a href="reset_password.php" class="forgot_link">forgot ?</a>
 		<input name="login" value="Log In" type="submit">
 	</div>
 	</form>
