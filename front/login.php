@@ -21,7 +21,7 @@
 }
 
 body {
-	background: #448ed3 ;
+	background: #808080 ;
 	font-family: "Lato" ;
 }
 .wrap {
@@ -36,7 +36,7 @@ body {
 	width: 65px;
 	border-radius: 100px;
 	height: 65px;
-	background: #448ed3 ;
+	background: #808080 ;
 	position: relative;
 	bottom: -15px;
 }
