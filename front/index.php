@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,19 +47,22 @@
                 <ul class="nav navbar-nav">
                   <?php  include "./includes/categories.php"?>
                   <?php 
+                  
                   if(isset($_SESSION['user_id'])){
 
+
                     echo  "<li>";
-                    echo  "<a href = '#'>Profile</a>";
-                    echo "</li>";
-                    
-                    echo  "<li>";
-                    echo  "<a href = '#'>Logout</a>";
+                    echo  "<a href='#'>Profile</a>";
                     echo "</li>";
 
+                    echo  "<li>";
+                    echo  "<a href='#'>Logout</a>";
+                    echo "</li>";
+
+
+
+
                   }
-                  
-                  
                   
                   ?>
                 </ul>
