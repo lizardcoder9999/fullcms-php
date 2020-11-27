@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-<title>Registration</title>
+<title>Contact Us</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -29,18 +29,18 @@
     .form-control, .btn{        
         border-radius: 3px;
     }
-	.signup-form{
+	.contact-form{
 		width: 400px;
 		margin: 0 auto;
 		padding: 30px 0;
 	}
-	.signup-form h2{
+	.contact-form h2{
 		color: #636363;
         margin: 0 0 15px;
 		position: relative;
 		text-align: center;
     }
-	.signup-form h2:before, .signup-form h2:after{
+	.contact-form h2:before, .contact-form h2:after{
 		content: "";
 		height: 2px;
 		width: 30%;
@@ -49,18 +49,18 @@
 		top: 50%;
 		z-index: 2;
 	}	
-	.signup-form h2:before{
+	.contact-form h2:before{
 		left: 0;
 	}
-	.signup-form h2:after{
+	.contact-form h2:after{
 		right: 0;
 	}
-    .signup-form .hint-text{
+    .contact-form .hint-text{
 		color: #999;
 		margin-bottom: 30px;
 		text-align: center;
 	}
-    .signup-form form{
+    .contact-form form{
 		color: #999;
 		border-radius: 3px;
     	margin-bottom: 15px;
@@ -68,67 +68,74 @@
         box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
         padding: 30px;
     }
-	.signup-form .form-group{
+	.contact-form .form-group{
 		margin-bottom: 20px;
 	}
-	.signup-form input[type="checkbox"]{
+	.contact-form input[type="checkbox"]{
 		margin-top: 3px;
 	}
-	.signup-form .btn{        
+	.contact-form .btn{        
         font-size: 16px;
         font-weight: bold;		
 		min-width: 140px;
         outline: none !important;
     }
-	.signup-form .row div:first-child{
+	.contact-form .row div:first-child{
 		padding-right: 10px;
 	}
-	.signup-form .row div:last-child{
+	.contact-form .row div:last-child{
 		padding-left: 10px;
 	}    	
-    .signup-form a{
+    .contact-form a{
 		color: #fff;
 		text-decoration: underline;
 	}
-    .signup-form a:hover{
+    .contact-form a:hover{
 		text-decoration: none;
 	}
-	.signup-form form a{
+	.contact-form form a{
 		color: #5cb85c;
 		text-decoration: none;
 	}	
-	.signup-form form a:hover{
+	.contact-form form a:hover{
 		text-decoration: underline;
 	}  
 </style>
 </head>
 <body>
-<div class="signup-form">
-    <form action="./includes/registration_proccess.php" method="post">
-		<h2>Register</h2>
-		<p class="hint-text">Create your account. It's free and only takes a minute.</p>
+<div class="contact-form">
+    <form action="./includes/contact_process.php" method="POST">
+		<h2>Contact Us</h2>
+		<p class="hint-text">Hello if you would like to send us a message please fill out this form.</p>
         <div class="form-group">
-           <div class="form-group">
-        	<input type="text" class="form-control" name="user_full_name" placeholder="Enter your full name" required="required">
+     
+
+
+        <div class="form-group">
+        	<input type="text" class="form-control" name="contact_name" placeholder="Enter your name" required="required">
         </div>
-           <div class="form-group">
-        	<input type="text" class="form-control" name="username" placeholder="Enter your username" required="required">
+
+
+        <div class="form-group">
+        	<input type="email" class="form-control" name="contact_email" placeholder="Email" required="required">
+        </div>
+
+
+        <div class="form-group">
+        	<input type="text" class="form-control" name="contact_subject" placeholder="Subject" required="required">
         </div>
 
         <div class="form-group">
-        	<input type="email" class="form-control" name="user_email" placeholder="Email" required="required">
+            <textarea name="body" id = "contact_body" cols="30" rows="10" class="form-control" placeholder="Enter Message Here"></textarea>
         </div>
+
 		<div class="form-group">
-            <input type="password" class="form-control" name="user_password" placeholder="Password" required="required">
-        </div>       
-        <div class="form-group">
-			<label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
-		</div>
-		<div class="form-group">
-            <input type="submit" class="btn btn-success btn-lg btn-block" name = 'register_user' value="Register Now">
+            <input type="submit" class="btn btn-success btn-lg btn-block" name = 'contact_us' value="Send Message">
         </div>
+
+
     </form>
-	<div class="text-center">Already have an account? <a href="login.php">Sign in</a></div>
+	
 </div>
 </body>
 </html>
