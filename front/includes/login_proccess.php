@@ -30,6 +30,9 @@ if (isset($_POST['login'])) {
                 $_SESSION['user_full_name'] = $db_user_id;
                 $_SESSION['username'] = $db_username;
                 header("Location: ../index.php");
+            }else{
+                header("Location: ../login.php?error=invalid_email_or_pass");
+                exit();
             }
         }
     }
