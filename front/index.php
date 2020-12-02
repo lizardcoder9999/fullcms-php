@@ -59,6 +59,11 @@
                     echo  "<a href='logout.php'>Logout</a>";
                     echo "</li>";
 
+                    echo "<li>";
+                    echo "<a>Hello {$_SESSION['username']}</a>";
+                    echo "</li>";
+
+
                   }else{
 
 
