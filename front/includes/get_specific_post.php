@@ -5,7 +5,7 @@ if(isset($_GET['post_id'])){
 require_once("db.php");
 
 $post_id = $_GET['post_id'];
-$query = "SELECT * FROM posts WHERE id = ?";
+$query = "SELECT * FROM posts WHERE post_id = ?";
 $stmt = mysqli_stmt_init($connection);
 if(!mysqli_stmt_prepare($stmt,$query)){
 
