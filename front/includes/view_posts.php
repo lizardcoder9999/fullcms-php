@@ -5,6 +5,7 @@ $view_posts_query = mysqli_query($connection,$query);
 
 while($row = mysqli_fetch_assoc($view_posts_query)){
 
+    $post_id = $row['post_id'];
     $post_author = $row['post_author'];
     $post_title = $row['post_name'];
     $post_content = $row['post_content'];
@@ -28,7 +29,7 @@ while($row = mysqli_fetch_assoc($view_posts_query)){
      echo "<img class='img-responsive' src='$post_image_link' alt='' width = '500px'>";
      echo "<hr>";
      echo "$post_content";
-     echo "<a class='btn btn-primary' href='#'>Read More <span class='glyphicon glyphicon-chevron-right'></span></a>";
+     echo "<a class='btn btn-primary' href='post.php?post_id=$post_id'>Read More <span class='glyphicon glyphicon-chevron-right'></span></a>";
      echo "<hr>";
 
 
