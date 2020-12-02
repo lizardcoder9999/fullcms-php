@@ -105,7 +105,7 @@
                 <!-- Comments Form -->
                 <div class="well">
                     <h4>Leave a Comment:</h4>
-                    <form role="form">
+                    <form role="form" action="./includes/leave_comment.php" method="POST">
                         <div class="form-group">
                             <label>Your name</label>
                             <input type='text' name="comment_author">
