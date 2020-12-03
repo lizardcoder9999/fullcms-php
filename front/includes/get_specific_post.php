@@ -27,6 +27,38 @@ while($row = mysqli_fetch_assoc($result)){
     $post_tags = $row['post_tags'];
     $posted_on = $row['posted_on'];
 
+
+   echo  "<h1>$post_name </h1>";
+   echo "<p class='lead'>";
+   echo "by <a href='#'><$post_author;</a>";
+   echo "</p>";
+
+   echo "<hr>";
+
+
+   echo "<p><span class='glyphicon glyphicon-time'></span> Posted on $posted_on; </p>";
+
+   echo "<hr>";
+
+
+  echo  "<img class='img-responsive' src=$post_image_link alt=''>";
+
+echo   "<hr>";
+
+
+  echo  "<p class='lead'> $post_content</p>";
+
+  echo  "<hr>";
+
+
+
+
+
+
+
+
+
+
 }
 
 

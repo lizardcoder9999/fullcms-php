@@ -70,32 +70,11 @@
             <div class="col-lg-8">
 
                 <!-- Blog Post -->
-                <?php include_once("./includes/get_specific_post.php"); ?>
+                
                 <!-- Title -->
-                <h1><?php $post_name ;?></h1>
-
-                <!-- Author -->
-                <p class="lead">
-                    by <a href="#"><?php $post_author;?></a>
-                </p>
-
-                <hr>
-
-                <!-- Date/Time -->
-                <p><span class="glyphicon glyphicon-time"></span> Posted on <?php $posted_on; ?></p>
-
-                <hr>
-
-                <!-- Preview Image -->
-                <img class="img-responsive" src=<?php $post_image_link ;?> alt="">
-
-                <hr>
-
-                <!-- Post Content -->
-                <p class="lead"><?php $post_content;?></p>
- 
-                <hr>
-
+                
+                <?php include_once("./includes/get_specific_post.php"); ?>
+             
                 <!-- Blog Comments -->
 
                 <!-- Comments Form -->
